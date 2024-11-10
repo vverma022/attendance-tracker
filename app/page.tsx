@@ -4,6 +4,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons"
 import { ComponentIcon, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import backgroundImage from "@/public/gradient.jpg"
 
 
 const stackServerApp = {
@@ -33,14 +34,21 @@ export default function LandingPage() {
     </header>
   
     <main className="flex-1 flex flex-col items-center justify-center">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col items-center">
+    <section
+     className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col items-center"
+     style={{
+     backgroundImage: `url(${backgroundImage.src})`,
+     backgroundSize: 'cover',
+     backgroundPosition: 'center',
+  }}
+>
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
                 A Smart Attendance System for Educational Institutions
               </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl text-black">
                 Built for students, by students. This Smart Attendance System is designed to make the lives of students and teachers easier by streamlining the attendance process.
               </p>
             </div>
