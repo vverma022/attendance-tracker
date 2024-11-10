@@ -48,7 +48,7 @@ export default function LandingPage() {
               <h1 className="text-3xl tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
                 A Smart Attendance System for Educational Institutions
               </h1>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl text-black">
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl text-gray-950">
                 Built for students, by students. This Smart Attendance System is designed to make the lives of students and teachers easier by streamlining the attendance process.
               </p>
             </div>

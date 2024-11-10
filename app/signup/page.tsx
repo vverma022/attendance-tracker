@@ -8,11 +8,14 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Icons } from '@/components/ui/icons'
+import Header from '@/components/header'
 
 export default function SignUpPage() {
   const [userType, setUserType] = useState<'student' | 'teacher'>('student')
 
   return (
+    <>
+    <Header/>
     <div className="container flex items-center justify-center min-h-screen px-4 py-12">
       <Card className="w-full max-w-lg">
         <CardHeader className="space-y-1 items-center">
@@ -72,5 +75,6 @@ export default function SignUpPage() {
         </CardFooter>
       </Card>
     </div>
+    </>
   )
 }

@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { GraduationCap, UserCog } from 'lucide-react'
+import Header from '@/components/header'
+
 
 // Mock data for student attendance
 const mockAttendance = [
@@ -50,19 +51,7 @@ export default function TeacherDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
-      <header className="bg-white dark:bg-gray-800 shadow">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <GraduationCap className="h-8 w-8 text-primary" />
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">EduTrack</h1>
-          </div>
-          <Button variant="ghost" className="flex items-center space-x-2">
-            <UserCog className="h-5 w-5" />
-            <span>Edit Profile</span>
-          </Button>
-        </div>
-      </header>
-
+        <Header />
       <main className="container mx-auto p-4">
         <div className="flex flex-col items-center mb-8 mt-8">
           <Card className="w-full max-w-md">
